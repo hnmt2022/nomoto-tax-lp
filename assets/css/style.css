@@ -178,10 +178,19 @@ section.alt {
   margin-bottom: 18px;
 }
 
-.hero h1 {
-  font-size: 34px;
-  line-height: 1.6;
+.service-name {
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 800;
   color: var(--color-navy);
+  line-height: 1.3;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: clamp(20px, 2.6vw, 25px);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-text-soft);
   margin-bottom: 16px;
 }
 
@@ -741,9 +750,6 @@ section.alt {
 @media (max-width: 480px) {
   body {
     font-size: 19px;
-  }
-  .hero h1 {
-    font-size: 28px;
   }
   .section-title {
     font-size: 24px;
