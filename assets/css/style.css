@@ -207,6 +207,24 @@ section.alt {
   margin-bottom: 28px;
 }
 
+.hero-highlight {
+  background: var(--color-white);
+  border: 2px solid var(--color-navy);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 0 auto 28px;
+  max-width: 480px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.hero-highlight strong {
+  color: var(--color-navy);
+  font-size: 17px;
+}
+
 .hero-photo {
   width: 140px;
   height: 140px;
@@ -745,6 +763,120 @@ section.alt {
   color: var(--color-text-soft);
   text-align: center;
   margin-top: 10px;
+}
+
+/* ---------- お問い合わせフォーム ---------- */
+
+.contact-form {
+  display: grid;
+  gap: 22px;
+}
+
+.form-group {
+  display: grid;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-navy);
+}
+
+.form-required {
+  display: inline-block;
+  background: var(--color-cta);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.form-optional {
+  display: inline-block;
+  color: var(--color-text-soft);
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--font-base);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-white);
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-navy);
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.form-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  white-space: pre-line;
+  outline: none;
+}
+
+.form-status.success {
+  background: #e6f2ea;
+  color: #1f6b3d;
+  border: 2px solid #1f6b3d;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.form-status.error {
+  background: #fbe9e6;
+  color: var(--color-cta-dark);
+}
+
+.form-status[hidden] {
+  display: none;
+}
+
+.contact-form button[type="submit"] {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-base);
+}
+
+.contact-form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 @media (max-width: 480px) {
